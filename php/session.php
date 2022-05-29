@@ -6,7 +6,7 @@
 
         unset($_SESSION['student-number']);
 
-        echo '<script>window.location.href = "/capstone-project/index.php"</script>';
+        echo '<script>window.location.href = "/attendance/index.php"</script>';
     }
 
 ?>

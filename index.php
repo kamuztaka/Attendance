@@ -7,7 +7,7 @@ if ($_SESSION['status'] == 'invalid' || empty($_SESSION['status'])) {
 }
 
 if ($_SESSION['status'] == 'valid') {
-  echo "<script>window.location.href = '/capstone-project/student-main-page.php'</script>";
+  echo "<script>window.location.href = '/attendance/student-main-page.php'</script>";
 }
 
 if (isset($_POST['login'])) {
@@ -24,7 +24,7 @@ if (isset($_POST['login'])) {
     if(mysqli_num_rows($sqlLogin) > 0) {
       $_SESSION['status'] = 'valid';
       $_SESSION['student-number'] = $result['student-number'];
-      echo '<script>window.location.href = "/capstone-project/student-main-page.php"</script>';
+      echo '<script>window.location.href = "/attendance/student-main-page.php"</script>';
     } else {
       $_SESSION['status'] = 'invalid';
       echo '<script>alert("Wrong student number and password")</script>';

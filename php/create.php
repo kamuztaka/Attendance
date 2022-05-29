@@ -10,9 +10,9 @@
     $sqlCreate = "INSERT INTO attendance VALUES( null, '$name', '$subject', '$date', '$choice')";
     $queryCreate = mysqli_query($con, $sqlCreate);
 
-    echo '<script>window.location.href = "/capstone-project/student-attendance-list.php"</script>';
+    echo '<script>window.location.href = "/attendance/student-attendance-list.php"</script>';
   } else {
-    echo '<script>window.location.href = "/capstone-project/student-attendance.php"</script>';
+    echo '<script>window.location.href = "/attendance/student-attendance.php"</script>';
   }
 
 
